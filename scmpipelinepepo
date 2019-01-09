@@ -1,0 +1,18 @@
+node { 
+        
+        stage ('this is y job')
+        {
+            git 'https://github.com/wakaleo/game-of-life.git'
+
+        }
+        stage('this my aven project')
+        {
+            sh 'mvn package'
+        }
+         
+        stage('this archive procket')
+        {
+            archive 'target/*.exec'
+        
+        }
+         }
